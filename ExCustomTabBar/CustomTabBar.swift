@@ -36,11 +36,6 @@ enum TabItem: Int {
 }
 
 final class CustomTabBar: UIView {
-    private enum Metric {
-        static let tabBarHeight = 56.0
-        static let tabBarWidth = UIScreen.main.bounds.width / 3 // tabItem 갯수로 나누기
-    }
-    
     private let stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
