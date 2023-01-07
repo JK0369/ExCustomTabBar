@@ -107,7 +107,7 @@ final class CustomTabBar: UIView {
     }
 }
 
-// https://stackoverflow.com/questions/25919472/adding-a-closure-as-target-to-a-uibutton
+// https://ios-development.tistory.com/1237
 public extension UIControl {
     func addAction(for controlEvents: UIControl.Event = .touchUpInside, _ closure: @escaping () -> ()) {
         @objc class ClosureSleeve: NSObject {
